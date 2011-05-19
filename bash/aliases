@@ -1,0 +1,27 @@
+alias h="history"
+alias e="mvim"
+alias ea="vim ~/bin/dotfiles/bash/aliases"
+alias ev="mvim ~/.vimconfigs/vimrc"
+alias egv="mvim ~/.vimconfigs/gvimrc"
+alias ehtmlsnippets="mvim ~/.vimconfigs/.vim/snippets/html.snippets"
+alias ejssnippets="mvim ~/.vimconfigs/.vim/snippets/javascript.snippets"
+alias ecsssnippets="vim ~/.vimconfigs/.vim/snippets/css.snippets"
+
+alias mongod="/usr/local/Cellar/mongodb/1.6.3-x86_64/bin/mongod"
+alias mongo="/usr/local/Cellar/mongodb/1.6.3-x86_64/bin/mongo"
+
+alias note="mvim ~/Dropbox/notes/quicknotes.txt"
+alias todo="mvim ~/Dropbox/notes/todo.txt"
+
+alias cdv="cd ~/.vimconfigs/.vim/"
+alias cdwd="cd ~/Dropbox/WebDev/"
+alias cdws="cd /Library/WebServer/Documents/"
+
+alias s="open /Applications/Safari.app/"
+alias ff="open /Applications/Firefox.app/"
+alias chr="open /Applications/Google\ Chrome.app/"
+alias pix="open /Applications/Pixelmator.app/"
+alias mail="open /Applications/Mail.app/"
+alias cal="open /Applications/iCal.app/"
+alias snap="open /Applications/LittleSnapper.app/"
+alias snip="open /Applications/Snippets.app/"

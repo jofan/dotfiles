@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/stefan/.weinre'
+let g:netrw_dirhist_2='/Users/stefan'
+let g:netrw_dirhist_3='/Users/stefan/.weinre'

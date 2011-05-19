@@ -1,0 +1,4 @@
+export EDITOR="vim -N"
+export PATH=$PATH:~/bin
+. ~/.nvm/nvm.sh
+nvm use v0.4.7
