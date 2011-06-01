@@ -50,7 +50,12 @@ set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Or use vividchalk, topfunky-light
-colorscheme topfunky-light
+colorscheme molokai
+
+" With a map leader it's possible to do extra key combinations
+" " like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -67,6 +72,18 @@ map <leader>tm :tabmove
 map <Leader>[ :FuzzyFinderTextMate<Enter>
 map <Leader>] :FuzzyFinderBuffer<Enter>
 
+" Map ESC to jj
+inoremap jj <ESC>
+" Map space to / (search) and c-space to ? (backgwards search)
+map <space> /
+map <c-space> ?
+" Split window and navigate between them
+nnoremap <leader>s <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
@@ -81,4 +98,16 @@ autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
+" Use JS syntax for JSON
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 let g:ragtag_global_maps = 1
+
+" Fast saving
+nmap <leader>w :w!<cr>
+"
+" " Fast editing of the .vimrc
+map <leader>e :e! ~/.vim_runtime/vimrc<cr>
+"
+" " When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/bin/dotfiles/vim/vimrc
