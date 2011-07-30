@@ -30,6 +30,7 @@ export PATH=$HOME/.nvm/v0.4.7/bin:$HOME/local/bin:/opt/local/bin:/opt/local/sbin
 
 # Set up aliasing etc
 . ~/bin/dotfiles/bash/aliases
+. ~/bin/dotfiles/bash/env
 
 box(){cd ~/Dropbox/$1;}
 compctl -W ~/Dropbox -/ box
