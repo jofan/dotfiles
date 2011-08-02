@@ -21,7 +21,7 @@ export ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git, git-flow, githubs)
+plugins=(git, git-flow, github, osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,6 +30,7 @@ export PATH=$HOME/.nvm/v0.4.7/bin:$HOME/local/bin:/opt/local/bin:/opt/local/sbin
 
 # Set up aliasing etc
 . ~/bin/dotfiles/bash/aliases
+. ~/.nvm/nvm.sh
 
 dev(){cd ~/Dropbox/WebDev/$1;}
 compctl -W ~/Dropbox/WebDev -/ dev
