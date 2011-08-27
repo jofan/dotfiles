@@ -1,4 +1,3 @@
-" Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
@@ -57,6 +56,9 @@ colorscheme molokai
 let mapleader = ","
 let g:mapleader = ","
 
+" Make it easier to write commands
+map <leader>, :
+
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -67,6 +69,9 @@ map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
+
+" CoffeeScript mappings.
+map <leader>cc :CoffeeCompile<cr>
 
 " Uncomment to use Jamis Buck's file opening plugin
 map <Leader>[ :FuzzyFinderTextMate<Enter>
