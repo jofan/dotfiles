@@ -40,3 +40,7 @@ compctl -W ~/Dropbox/WebDev -/ dev
 
 server(){cd /Library/WebServer/Documents/$1;}
 compctl -W /Library/WebServer/Documents -/ server
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
