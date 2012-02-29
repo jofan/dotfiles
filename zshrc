@@ -38,5 +38,8 @@ compctl -W ~/Dropbox -/ box
 dev(){cd ~/Dropbox/WebDev/$1;}
 compctl -W ~/Dropbox/WebDev -/ dev
 
+doc(){cd ~/Documents/$1;}
+compctl -W ~/Documents -/ doc
+
 server(){cd /Library/WebServer/Documents/$1;}
 compctl -W /Library/WebServer/Documents -/ server
