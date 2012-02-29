@@ -26,7 +26,7 @@ plugins=(git, git-flow, github, osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/.nvm/v0.4.7/bin:$HOME/local/bin:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/gems/ruby-1.9.2-p0/bin:$HOME/.rvm/gems/ruby-1.9.2-p0@global/bin:$HOME/.rvm/rubies/ruby-1.9.2-p0/bin:$HOME/.rvm/bin:$HOME/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/opt/local/bin:$HOME/bin
+export PATH=$HOME/local/bin:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/lib:$HOME/.rvm/bin:$HOME/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/opt/local/bin:$HOME/bin
 
 # Set up aliasing etc
 . ~/bin/dotfiles/bash/aliases
