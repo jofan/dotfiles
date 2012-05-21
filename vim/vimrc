@@ -57,7 +57,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Make it easier to write commands
-map <leader>, :
+" map <leader>, :
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
