@@ -14,6 +14,8 @@ alias ecsssnippets="mvim ~/bin/dotfiles/vim/snippets/css.snippets"
 alias mongod="~/mongodb-2.0.2/bin/mongod"
 alias mongo="~/mongodb-2.0.2/bin/mongo"
 
+alias redis="redis-server /usr/local/etc/redis.conf"
+
 alias note="mvim ~/Dropbox/notes/quicknotes.txt"
 alias todo="mvim ~/Dropbox/notes/todo.txt"
 

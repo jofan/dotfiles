@@ -26,7 +26,7 @@ plugins=(git, git-flow, github, osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/local/bin:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/lib:$HOME/.rvm/bin:$HOME/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/opt/local/bin:$HOME/bin
+export PATH=/opt/local/bin:/opt/local/sbin:$HOME/.rvm/lib:$HOME/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/opt/local/bin:$HOME/bin:/usr/local/bin/node:/usr/local/bin/npm
 
 # Set up aliasing etc
 . ~/bin/dotfiles/bash/aliases
@@ -37,6 +37,9 @@ compctl -W ~/Dropbox -/ box
 
 dev(){cd ~/Dropbox/WebDev/$1;}
 compctl -W ~/Dropbox/WebDev -/ dev
+
+hub(){cd ~/Dropbox/hub/$1;}
+compctl -W ~/Dropbox/hub -/ hub
 
 doc(){cd ~/Documents/$1;}
 compctl -W ~/Documents -/ doc
