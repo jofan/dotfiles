@@ -41,6 +41,12 @@ compctl -W ~/Dropbox/WebDev -/ dev
 hub(){cd ~/Dropbox/hub/$1;}
 compctl -W ~/Dropbox/hub -/ hub
 
+support(){cd ~/Dropbox/support/$1;}
+compctl -W ~/Dropbox/support -/ support
+
+labs(){cd ~/Dropbox/labs/$1;}
+compctl -W ~/Dropbox/labs -/ labs
+
 doc(){cd ~/Documents/$1;}
 compctl -W ~/Documents -/ doc
 
