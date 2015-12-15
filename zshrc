@@ -19,6 +19,8 @@ export ZSH_THEME="robbyrussell"
 # Uncomment following line if you want to disable autosetting terminal title.
 # export DISABLE_AUTO_TITLE="true"
 
+export NODE_PATH=/usr/local/lib/node_modules
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git, git-flow, github, osx)
@@ -26,31 +28,30 @@ plugins=(git, git-flow, github, osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/opt/local/bin:/opt/local/sbin:$HOME/.rvm/lib:$HOME/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/opt/local/bin:$HOME/bin:/usr/local/bin/node:/usr/local/bin/npm
+export PATH=/opt/local/bin:/opt/local/sbin:$HOME/.rvm/lib:$HOME/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:$HOME/bin:/usr/local/bin/node:/usr/local/bin/npm:/usr/local/bin/gm:$HOME/bin/mongo
 
 # Set up aliasing etc
 . ~/bin/dotfiles/bash/aliases
 . ~/bin/dotfiles/bash/env
 
-box(){cd ~/Dropbox/$1;}
-compctl -W ~/Dropbox -/ box
-
-dev(){cd ~/Dropbox/WebDev/$1;}
-compctl -W ~/Dropbox/WebDev -/ dev
-
-hub(){cd ~/Dropbox/hub/$1;}
-compctl -W ~/Dropbox/hub -/ hub
-
-support(){cd ~/Dropbox/support/$1;}
-compctl -W ~/Dropbox/support -/ support
-
-labs(){cd ~/Dropbox/labs/$1;}
-compctl -W ~/Dropbox/labs -/ labs
-
 doc(){cd ~/Documents/$1;}
 compctl -W ~/Documents -/ doc
 
+projects(){cd ~/projects/$1;}
+compctl -W ~/projects -/ projects
+
+acc(){cd ~/Agnitio-Content-Development/accelerator/$1;}
+compctl -W ~/Agnitio-Content-Development/accelerator -/ acc
+
+api(){cd ~/Agnitio-Content-Development/content-api/$1;}
+compctl -W ~/Agnitio-Content-Development/content-api -/ api
+
+dp(){cd ~/Agnitio-Content-Development/demo-presentations/$1;}
+compctl -W ~/Agnitio-Content-Development/demo-presentations -/ dp
+
 server(){cd /Library/WebServer/Documents/$1;}
 compctl -W /Library/WebServer/Documents -/ server
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

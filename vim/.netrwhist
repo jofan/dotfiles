@@ -1,8 +1,8 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/McMini/Dropbox/WebDev'
-let g:netrw_dirhist_2='/Users/McMini/Dropbox/WebDev/icarou'
-let g:netrw_dirhist_3='/Users/stefan/bin/dotfiles/zsh'
-let g:netrw_dirhist_4='/Users/stefan/bin/dotfiles/bash'
-let g:netrw_dirhist_5='/Library/WebServer/Documents/Barista/app'
-let g:netrw_dirhist_6='/'
+let g:netrw_dirhist_1='/Users/jofan/ACD/demo_presentations/zanadryl-20151012105918'
+let g:netrw_dirhist_2='/Users/jofan/ACD/accelerator'
+let g:netrw_dirhist_3='/Users/jofan/ACD/accelerator/_framework'
+let g:netrw_dirhist_4='/Users/jofan/ACD/accelerator/_framework/plugins'
+let g:netrw_dirhist_5='/Users/jofan/ACD/accelerator/_framework/plugins/storyboard'
+let g:netrw_dirhist_6='/Users/jofan/projects/Support/Contour Next New English'
