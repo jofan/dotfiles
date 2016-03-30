@@ -1,5 +1,7 @@
 # My dotfile settings
 
+Install in ~/bin/ and make sure ~/bin is in path
+
 ## Manual settings
 
 `brew install zsh`
