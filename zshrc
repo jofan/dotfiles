@@ -40,6 +40,9 @@ compctl -W ~/Documents -/ doc
 projects(){cd ~/projects/$1;}
 compctl -W ~/projects -/ projects
 
+ah(){cd ~/dev/anthill/$1;}
+compctl -W ~/dev/anthill -/ ah
+
 acc(){cd ~/Agnitio-Content-Development/accelerator/$1;}
 compctl -W ~/Agnitio-Content-Development/accelerator -/ acc
 
@@ -49,9 +52,5 @@ compctl -W ~/Agnitio-Content-Development/content-api -/ api
 dp(){cd ~/Agnitio-Content-Development/demo-presentations/$1;}
 compctl -W ~/Agnitio-Content-Development/demo-presentations -/ dp
 
-server(){cd /Library/WebServer/Documents/$1;}
-compctl -W /Library/WebServer/Documents -/ server
-
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+export NVM_DIR="/Users/sli/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
