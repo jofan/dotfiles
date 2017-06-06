@@ -37,11 +37,11 @@ export PATH=/opt/local/bin:/opt/local/sbin:$HOME/.rvm/lib:$HOME/.rvm/bin:/usr/bi
 doc(){cd ~/Documents/$1;}
 compctl -W ~/Documents -/ doc
 
-projects(){cd ~/projects/$1;}
-compctl -W ~/projects -/ projects
+projects(){cd ~/dev/projects/$1;}
+compctl -W ~/dev/projects -/ projects
 
-ah(){cd ~/dev/anthill/$1;}
-compctl -W ~/dev/anthill -/ ah
+nutri(){cd ~/dev/projects/nutridia/$1;}
+compctl -W ~/dev/projects/nutridia -/ nutri
 
 acc(){cd ~/Agnitio-Content-Development/accelerator/$1;}
 compctl -W ~/Agnitio-Content-Development/accelerator -/ acc
@@ -52,5 +52,22 @@ compctl -W ~/Agnitio-Content-Development/content-api -/ api
 dp(){cd ~/Agnitio-Content-Development/demo-presentations/$1;}
 compctl -W ~/Agnitio-Content-Development/demo-presentations -/ dp
 
+edit_xdb(){cd ~/dev/anthill/products/maestro && mongod --port 27017 --dbpath ./XCITE_SERVER_DB/data/db/}
+edit_xserver(){cd ~/dev/anthill/products/maestro/bayer-master-reference-manager-server-v2 && atom .}
+edit_xclient(){cd ~/dev/anthill/products/maestro/bayer-xcite-spa-2015 && atom .}
+edit_refjs(){cd ~/dev/anthill/products/maestro/referencejs && atom .}
+
 export NVM_DIR="/Users/sli/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/sli/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/sli/google-cloud-sdk/completion.zsh.inc'
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# OPAM configuration
+. /Users/sli/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

@@ -11,6 +11,10 @@ alias ehtmlsnippets="vim ~/bin/dotfiles/vim/snippets/html.snippets"
 alias ejssnippets="vim ~/bin/dotfiles/vim/snippets/javascript.snippets"
 alias ecsssnippets="vim ~/bin/dotfiles/vim/snippets/css.snippets"
 
+alias expose="~/dev/forks/Expose/expose.sh"
+
+alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
+
 alias mongod="~/bin/mongo/mongod"
 alias mongo="~/bin/mongo/mongo"
 
