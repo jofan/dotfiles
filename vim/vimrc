@@ -78,7 +78,7 @@ map <Leader>[ :FuzzyFinderTextMate<Enter>
 map <Leader>] :FuzzyFinderBuffer<Enter>
 
 " Map ESC to jj
-inoremap jj <ESC>
+inoremap jk <ESC>
 " Map space to / (search) and c-space to ? (backgwards search)
 map <space> /
 map <c-space> ?

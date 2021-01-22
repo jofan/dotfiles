@@ -1,3 +1,4 @@
+ZSH_DISABLE_COMPFIX=true
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -18,6 +19,8 @@ export ZSH_THEME="robbyrussell"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # export DISABLE_AUTO_TITLE="true"
+
+export EDITOR='vim'
 
 export NODE_PATH=/usr/local/lib/node_modules
 
